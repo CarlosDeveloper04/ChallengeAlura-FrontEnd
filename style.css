@@ -5,10 +5,10 @@
 }
 
 .tudo{
-    background-color: white ;
-    padding: 30px 130px 30px 130px;
+    background-color: rgb(238, 231, 231) ;
+    padding: 30px 80px 30px 80px;
     border: 4px solid brown;
-    margin: 40px 60px ;
+    margin: 40px 40px ;
 }  
 .menu{
     display: flex;
@@ -37,6 +37,8 @@
 .menu__list__item a{
     text-decoration: none;
     padding: 10px;
+    opacity: 0.3;
+    font-weight: bold;
     
 
 }
@@ -45,10 +47,139 @@
     background-color: brown;
     border-radius: 10px;
     color: #fff;
+    opacity: 1;
     
     
 }
 
+/*seccion titulo*/
+
+.title{
+    display: flex;
+   
+    
+}
+
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 30px;
+    
+}
+
+.title__bio{
+    font-size: 30px;
+}
+
+.title__profile{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.title__network{
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0% ; 
+    
+}
+.title__network a{
+    padding-right: 30px;  
+    text-decoration: none;
+    opacity: 0.3;
+    font-weight: bold;
+}
+
+.title__network a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    opacity: 1;
+    
+}
+
+/*sobre mi*/
+
+.about{
+    background-color: #dbdada;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*Skills*/
+
+.skills{
+    display: block;
+    text-align: center;
+    
+    
+   
+}.skills__line{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+    
+}
+
+.skills__box{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(255, 251, 245);
+    
+
+}
+
+.skills__box ul{
+    padding-inline-start: 0;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    
+}
+
+
+.skills__name, .skills__img{
+    list-style: none;
+    font-size: small;
+    
+}
+
+/*hobbies*/
+
+.hobbies{
+    display: block;
+    margin-top: 30px;
+    text-align: center; 
+}
+
+
+.hobbies__box{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(255, 251, 245);
+}
+.hobbies__line{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.hobbies__box ul{
+    padding-inline-start: 0;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 251, 245);
+    
+}
+
+.hobbies__name, .hobbies__img{
+    list-style: none;
+    font-size: small;
+}
 
 
 
