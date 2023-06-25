@@ -2,12 +2,13 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(101, 106, 110);
+    font-size: 18px;
 }
 
 .tudo{
-    background-color: rgb(238, 231, 231) ;
+    background-color: rgb(255, 255, 255) ;
     padding: 30px 80px 30px 80px;
-    border: 4px solid brown;
+    border: 4px solid rgb(191, 199, 199);
     margin: 40px 40px ;
 }  
 .menu{
@@ -44,20 +45,16 @@
 }
 
 .menu__list__item a:hover{
-    background-color: brown;
+    background-color: rgb(191, 199, 199);
     border-radius: 10px;
     color: #fff;
-    opacity: 1;
-    
-    
+    opacity: 1; 
 }
 
 /*seccion titulo*/
 
 .title{
     display: flex;
-   
-    
 }
 
 .title__div{
@@ -101,7 +98,7 @@
 /*sobre mi*/
 
 .about{
-    background-color: #dbdada;
+    background-color: #fafbfc;
     padding: 10px;
     margin-top: 20px;
 }
@@ -111,10 +108,11 @@
 .skills{
     display: block;
     text-align: center;
-    
+    margin-bottom: 50px ;
     
    
-}.skills__line{
+}
+.skills__line{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
@@ -127,7 +125,9 @@
     height: 100px;
     margin: 10px;
     background-color: rgb(255, 251, 245);
-    
+    box-shadow: 24px 25px 24px 0px rgba(0,0,0,0.32);
+-webkit-box-shadow: 24px 25px 24px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 24px 25px 24px 0px rgba(0,0,0,0.32);
 
 }
 
@@ -135,7 +135,6 @@
     padding-inline-start: 0;
     padding-top: 30px;
     padding-right: 40px;
-    padding-bottom: 10px;
     
 }
 
@@ -150,8 +149,8 @@
 
 .hobbies{
     display: block;
-    margin-top: 30px;
     text-align: center; 
+    margin-bottom: 50px;
 }
 
 
@@ -160,6 +159,9 @@
     height: 100px;
     margin: 10px;
     background-color: rgb(255, 251, 245);
+    box-shadow: 24px 25px 24px 0px rgba(0,0,0,0.32);
+-webkit-box-shadow: 24px 25px 24px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 24px 25px 24px 0px rgba(0,0,0,0.32);
 }
 .hobbies__line{
     display: flex;
@@ -171,7 +173,6 @@
     padding-inline-start: 0;
     padding-top: 30px;
     padding-right: 40px;
-    padding-bottom: 10px;
     background-color: rgb(255, 251, 245);
     
 }
@@ -179,6 +180,168 @@
 .hobbies__name, .hobbies__img{
     list-style: none;
     font-size: small;
+}
+
+/*formacion*/
+
+.logoformacion{
+    width: 190px;
+    height: 130px;
+    
+}
+
+.academic{
+    display: block;
+    text-align: center;
+    
+}
+
+.academic__courses{
+    display: flex;
+    justify-content: space-evenly;
+}
+.academic__courses__list{
+    list-style: none;
+}
+
+/*Experiencia*/
+
+.experience{
+    display: block;
+    text-align: center;
+    
+}
+
+.experiencie__box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.experience__img{
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.btn{
+    position: relative;
+    padding: 15px ;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgb(51, 14, 214);
+    border: 2px solid blue;
+    opacity: 0.8;
+   
+}
+
+.btn::after, .btn::before{
+    content: "";
+    position: absolute;
+    opacity: 0.03;
+    background: rgb(51, 14, 214);
+    border-radius: inherit;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.03s ease;
+    
+}
+
+.btn:hover{
+    transform: translate(-10px, -5px);
+    opacity: 1;
+    box-shadow: 31px 31px 31px 5px rgba(51,14,214,0.75);
+-webkit-box-shadow: 31px 31px 31px 5px rgba(51,14,214,0.75);
+-moz-box-shadow: 31px 31px 31px 5px rgba(51,14,214,0.75);
+}
+
+.btn:hover::after{
+    transform: translate(-5px, -5px);
+}
+
+.btn:hover::before{
+    transform: translate(-5px, -5px);
+}
+
+/*contacto*/
+
+.formcontato{
+    display: block;
+    align-items: center;
+    
+}
+
+.formcontato__contacto{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    
+
+}
+
+.formcontato__img{
+    background-color: #fff;
+    margin-right: 20px ;
+    width: 90%;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.form__input, .formcontato__textarea{
+	position: relative;
+	width: 100%;
+	margin-top: 0.5rem;
+	padding-block: 1rem;
+	border-radius: 5px 10px;
+	background-color: whitesmoke;
+	border: none;
+	outline: none;
+
+}
+
+.form__input:hover, .formcontato__textarea:hover {
+	border-bottom: 2px solid rgb(101, 101, 240);
+
+}
+
+.formcontacto__boton{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(101, 101, 240);
+    border-radius: 10px;
+    box-shadow:  0 0 5px rgb(101, 101, 240);
+}
+
+.formcontacto__boton:hover{
+    background-color: rgb(101, 101, 240);
+    box-shadow: 0 0 5px rgb(101, 101, 240), 0 0 25px rgb(101, 101, 240), 0 0 50px rgb(101, 101, 240), 0 0 100px rgb(101, 101, 240), 0 0 200px rgb(101, 101, 240);
+    
+}
+
+.formcontacto__boton:active{
+    background-color: blue;
+}
+
+/*footer*/
+
+.footer__rodape p{
+    font-size: 13px;
+    font-weight: bold;
 }
 
 
